@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register In</title>
+    <link href="signIn.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div id="card" class="card">
+            <div id="leftCard" class="leftCard">
+                <p class="newUser">Hello New User!</p>
+                <p class="newUserMsg">Let the Magic Begin</p><br>
+
+                <div id="success" class="success"></div><br>
+                <form id="registerForm">
+
+                    <div id="emailExists" class='emailExists'></div><br>
+
+                    <div><input type='text' id="usrRegName" class="userName" placeholder="Name" autocomplete="off">
+                    </div>
+                    <div id="nameError" class="error" style="visibility: hidden">Error</div>
+
+                    <div><input type='text' id="userDate" class="userDate" placeholder="Birth Date" autocomplete="off"
+                            onfocus="(this.type='date')" onblur="(this.type='text')"></div>
+                    <div id="birthdateError" class="error" style="visibility: hidden">Error</div>
+                    
+                    <div><input type='email' id="usrRegEmail" class="userEmail" placeholder="Email" autocomplete="off">
+                    </div>
+                    <div id="emailError" class="error" style="visibility: hidden">Error</div>
+                    
+                    <div><input type='password' id='pswdReg' class="userPassword" placeholder="Password"
+                            autocomplete="off"></div>
+                    <div id="passwordError" class="error" style="visibility: hidden">Error</div><br>
+
+                    <button class="regInBtn" id="regInBtn">Register</button>
+                </form><br>
+                <div class="signInMsg">Already have an account?<span id="signInAnc" class="signInAnc"><a
+                            href="./signIn.html">Sign In</a></span></div>
+            </div>
+            <div id="rightCard" class="rightCard">
+                <img src="./imageSignIn.png" />
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script type='module' src="./register.js"></script>
+
+</body>
+
+</html>

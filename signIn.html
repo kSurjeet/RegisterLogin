@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="signIn.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="card" class="card">
+            <div id="leftCard" class="leftCard">
+                <div><img class="logoImg" src="./signinLogo.jpg"  /></div>
+                <p class="wlcmMsg">Welcome Back</p>
+                <p class="msgDtl">Welcome to make your birthday special</p><br>
+
+                <form id="loginForm">
+                    <div><input type='email' id="userEmail" class="userEmail" placeholder="Email" autocomplete="off"></div>
+                    <div id="emailError" class="error"></div>
+                    <br><br>
+
+                    <div><input type ='password' id='userPassword' class="userPassword" placeholder="Password" autocomplete="off"></div>
+                    <div id="passwordError" class="error"></div>
+                    <span class="signFrgtPswd"><a href="./forgetPaswrd.html">Forget Password</a></span>
+                    <div id="invalidSignError" class="invalidSignError">Error</div></br>
+
+                    <button class="signInBtn" id="signInBtn">Sign In</button>
+                    
+            </form>
+                <p class="accntMsg">Don't have account? <span id="regstrAccnt" class=regstrAccnt ><a href="./register.html">Register Here!</a></span></p>
+            </div>
+            <div id="rightCard" class="rightCard">
+                <img src="./imageSignIn.png"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+   <script type='module' src="./signIn.js"></script>
+</body>
+</html>

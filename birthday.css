@@ -1,0 +1,355 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerBdy {
+	display: flex;
+	justify-content: center;
+	/* Horizontally centers child elements */
+	align-items: center;
+	/* Vertically centers child elements */
+	height: 100vh;
+
+}
+
+.cardBdy {
+	width: 50%;
+	height: 500px;
+	background: linear-gradient(#f8f8f8, #fff);
+	background-color: #eae7e7;
+	/*#f7f1f1; */
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	z-index: 1;
+	background-image: url(./giphy.gif);
+}
+
+.balloons {
+	position: fixed;
+	bottom: -200px;
+	opacity: 0.6;
+	width: 100px;
+	height: 183px;
+	background-repeat: no-repeat no-repeat;
+	background-size: 100px 183px;
+}
+
+.balloons h2 {
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px;
+	color: #BF4136;
+	text-shadow: 5px 5px 5px #FFF;
+	display: none;
+}
+
+#b1 {
+	background-image: url('b1.png');
+}
+
+#b2 {
+	background-image: url('b2.png');
+}
+
+#b3 {
+	background-image: url('b3.png');
+}
+
+#b4 {
+	background-image: url('b4.png');
+}
+
+#b5 {
+	background-image: url('b5.png');
+}
+
+#b6 {
+	background-image: url('b6.png');
+}
+
+#b7 {
+	background-image: url('b7.png');
+}
+
+#b8 {
+	background-image: url('b1.png');
+}
+
+#b9 {
+	background-image: url('b2.png');
+}
+
+#b10 {
+	background-image: url('b3.png');
+}
+
+#b11 {
+	background-image: url('b4.png');
+}
+
+#b12 {
+	background-image: url('b5.png');
+}
+
+#b13 {
+	background-image: url('b6.png');
+}
+
+#b14 {
+	background-image: url('b7.png');
+}
+
+.balloons-rotate-behaviour-one {
+	-webkit-animation: balloons_rotate_one linear 10s infinite;
+	-webkit-transform: rotate(30deg);
+	-moz-animation: balloons_rotate_one linear 10s infinite;
+	-moz-transform: rotate(30deg);
+	-o-animation: balloons_rotate_one linear 10s infinite;
+	-o-transform: rotate(30deg);
+	-ms-animation: balloons_rotate_one linear 10s infinite;
+	-ms-transform: rotate(30deg);
+	animation: balloons_rotate_one linear 10s infinite;
+	transform: rotate(30deg);
+}
+
+
+@-webkit-keyframes balloons_rotate_one {
+	0% {
+		-webkit-transform: rotate(30deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(-30deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(30deg);
+	}
+}
+
+@-moz-keyframes balloons_rotate_one {
+	0% {
+		-moz-transform: rotate(30deg);
+	}
+
+	50% {
+		-moz-transform: rotate(-30deg);
+	}
+
+	100% {
+		-moz-transform: rotate(30deg);
+	}
+}
+
+@-o-keyframes balloons_rotate_one {
+	0% {
+		-o-transform: rotate(30deg);
+	}
+
+	50% {
+		-o-transform: rotate(-30deg);
+	}
+
+	100% {
+		-o-transform: rotate(30deg);
+	}
+}
+
+@-ms-keyframes balloons_rotate_one {
+	0% {
+		-ms-transform: rotate(30deg);
+	}
+
+	50% {
+		-ms-transform: rotate(-30deg);
+	}
+
+	100% {
+		-ms-transform: rotate(30deg);
+	}
+}
+
+@keyframes balloons_rotate_one {
+	0% {
+		transform: rotate(30deg);
+	}
+
+	50% {
+		transform: rotate(-30deg);
+	}
+
+	100% {
+		transform: rotate(30deg);
+	}
+}
+
+.balloons-rotate-behaviour-two {
+	-webkit-animation: balloons_rotate_two linear 10s infinite;
+	-webkit-transform: rotate(-20deg);
+	-moz-animation: balloons_rotate_two linear 10s infinite;
+	-moz-transform: rotate(-20deg);
+	-o-animation: balloons_rotate_two linear 10s infinite;
+	-o-transform: rotate(-20deg);
+	-ms-animation: balloons_rotate_two linear 10s infinite;
+	-ms-transform: rotate(-20deg);
+	animation: balloons_rotate_two linear 10s infinite;
+	transform: rotate(-20deg);
+}
+
+@-webkit-keyframes balloons_rotate_two {
+	0% {
+		-webkit-transform: rotate(-20deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(20deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(-20deg);
+	}
+}
+
+@-moz-keyframes balloons_rotate_two {
+	0% {
+		-moz-transform: rotate(-20deg);
+	}
+
+	50% {
+		-moz-transform: rotate(20deg);
+	}
+
+	100% {
+		-moz-transform: rotate(-20deg);
+	}
+}
+
+@-o-keyframes balloons_rotate_two {
+	0% {
+		-o-transform: rotate(-20deg);
+	}
+
+	50% {
+		-o-transform: rotate(20deg);
+	}
+
+	100% {
+		-o-transform: rotate(-20deg);
+	}
+}
+
+@-ms-keyframes balloons_rotate_two {
+	0% {
+		-ms-transform: rotate(-20deg);
+	}
+
+	50% {
+		-ms-transform: rotate(20deg);
+	}
+
+	100% {
+		-ms-transform: rotate(-20deg);
+	}
+}
+
+@keyframes balloons_rotate_two {
+	0% {
+		transform: rotate(-20deg);
+	}
+
+	50% {
+		transform: rotate(20deg);
+	}
+
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+
+.balloon-border {
+	position: fixed;
+	top: 100%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+
+.containerBdy .cardBdy .birthdayMessage {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	font-style: italic;
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.containerBdy .cardBdy .userName {
+	margin: 50px 0px 10px 0px;
+	font-size: 30px;
+	color: #D14D39;
+	font-style: italic;
+}
+
+.userBirthday {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #99C96A;
+}
+
+.signOut {
+	background-color: #7d95e4;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	border: 1px transparent;
+	color: #ebebeb;
+	margin-left: 10px;
+}
+
+.signOut:hover {
+	background-color: #3d5fcf;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.signOutName {
+	color: #20CFB4;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.signOutDiv {
+	float: right;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+
+@media (max-width: 768px) {
+	.cardBdy {
+		width: 95%;
+		/* Adjust width for medium-sized screens */
+	}
+}
+
+@media (max-width: 576px) {
+	.cardBdy {
+		width: 100%;
+		/* Adjust width for small screens */
+		max-width: none;
+		/* Override max-width if necessary */
+	}
+}

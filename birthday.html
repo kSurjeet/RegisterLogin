@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <link href="./birthday.css" rel="stylesheet" type="text/css" />
+    <link href="./birthdayCard.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <!-- <link href="./signIn.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body>
+    <div class='row signOutDiv'style="float:">
+        <span id="signOutName" class="signOutName"></span>
+        <button id="signOut" class="signOut mr-5">Sign Out</button>
+    </div>
+    <div class="balloons text-center" id="b1">
+    	<h2 style="color:#F2B300;">H</h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+    	<h2 style="color:#0719D4;">B</h2>
+    </div>
+	<div class="balloons text-center" id="b3">
+    	<h2 style="color:#D14D39;">D</h2>
+    </div>
+	<div class="balloons text-center" id="b4">
+    	<h2 style="color:#8FAD00;">X</h2>
+    </div>
+	<div class="balloons text-center" id="b5">
+    	<h2 style="color:#8377E4;">O</h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+    	<h2 style="color:#99C96A;">L</h2>
+    </div>
+    <div class="balloons text-center" id="b7">
+    	<h2 style="color:#20CFB4;">A</h2>
+    </div>
+    <div class="balloons text-center" id="b8">
+    	<h2 style="color:#F2B300;">H</h2>
+    </div>
+    <div class="balloons text-center" id="b9">
+    	<h2 style="color:#0719D4;">B</h2>
+    </div>
+	<div class="balloons text-center" id="b10">
+    	<h2 style="color:#D14D39;">D</h2>
+    </div>
+	<div class="balloons text-center" id="b11">
+    	<h2 style="color:#8FAD00;">X</h2>
+    </div>
+	<div class="balloons text-center" id="b12">
+    	<h2 style="color:#8377E4;">O</h2>
+    </div>
+    <div class="balloons text-center" id="b13">
+    	<h2 style="color:#99C96A;">L</h2>
+    </div>
+    <div class="balloons text-center" id="b14">
+    	<h2 style="color:#20CFB4;">A</h2>
+    </div>
+
+    <div id="containerbdy" class="containerBdy">
+        <div id="cardbdy" class="cardBdy">
+            <div id="userName" class="userName"></div>
+            <div id="userBirthday" class="userBirthday"></div>
+            <div id="birthdayMessage" class='birthdayMessage'></div>
+        </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script  src="./balloon.js"></script>
+    <script type="module" src="./birthday.js"></script>
+
+    
+</body>
+</html>

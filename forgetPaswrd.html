@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Message</title>
+    <link href="signIn.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div id="card" class="card">
+            <div id="leftCard" class="leftCard">
+                <div><img class="logoImg" src="./signinLogo.jpg" /></div>
+                <p class="wlcmMsg">Reset Password</p>
+                <p class="msgDtl">Welcome to make your birthday special</p><br><br>
+
+                <form id="loginForm">
+                    <div><input type='email' id="userEmail" class="userEmail" placeholder="Email" autocomplete="off">
+                    </div>
+                    <br>
+
+                    <div id="checkEmail" class="checkEmail">Error</div><br><br>
+
+                    <button class="signInBtn frgtPassword" id="frgtPassword">Reset Password</button><br><br>
+                    <button class="forgtSignIn" id="forgtSignIn"><span class="signInAnc"> <a href="./signIn.html">Sign
+                                In</a></span></button>
+                </form>
+
+            </div>
+            <div id="rightCard" class="rightCard">
+                <img src="./imageSignIn.png" />
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="./forgetPaswrd.js"></script>
+</body>
+
+</html>

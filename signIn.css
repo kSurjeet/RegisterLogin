@@ -1,0 +1,252 @@
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    background-image:
+        linear-gradient(45deg, #f1f3f1f8 25%, transparent 25%),
+        linear-gradient(135deg, #9398df 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 10px px;
+    /* Must be a square */
+    background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
+    /* Must be half of one side of the square */
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    /* Horizontally centers child elements */
+    align-items: center;
+    /* Vertically centers child elements */
+    height: 100%;
+}
+
+.card {
+    width: 70%;
+    height: 600px;
+    background: linear-gradient(#f8f8f8, #fff);
+    background-color: #eae7e7;
+    /*#f7f1f1; */
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.leftCard {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url(./backgrounLeft.jpg);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.leftCard .logoImg {
+    height: 90px;
+    width: 130px;
+    margin: 50px 0px 0px 0px;
+}
+
+.leftCard .wlcmMsg {
+    font-weight: bolder;
+    font-size: larger;
+    color: #888be9;
+}
+
+.leftCard .msgDtl {
+    color: #8890b0;
+}
+
+.rightCard {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.rightCard img {
+    height: 90%;
+    width: 90%;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.leftCard input[type="email"],
+.leftCard input[type="text"],
+.leftCard input[type="password"],
+.leftCard input[type="date"] {
+
+    border: 1px solid #c8c8c8;
+    color: #777;
+    font: 13px;
+    margin: 0 0 10px;
+    padding: 15px 10px 15px 40px;
+    width: 50%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+.leftCard input[type="email"]:focus,
+.leftCard input[type="text"]:focus,
+.leftCard input[type="password"]:focus,
+.leftCard input[type="date"]:focus {
+    box-shadow: 0 0 2px #7d95e4 inset;
+    background-color: #fff;
+    border: 1px solid #7d95e4;
+    outline: none;
+
+}
+
+.leftCard .userName {
+    background: #eae7e7 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
+    background-position: left top;
+    background-position-y: 8px;
+}
+
+.leftCard input[type="password"] {
+    background: #eae7e7 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
+    background-position: left center;
+}
+
+.leftCard .signInBtn,
+.regInBtn,
+.forgtSignIn {
+    background-color: #7d95e4;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: 1px transparent;
+    color: #ebebeb;
+}
+
+.leftCard .signInBtn:hover,
+.regInBtn:hover,
+.forgtSignIn:hover {
+    background-color: #3d5fcf;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.leftCard .accntMsg {
+    float: left;
+    margin: 20px 20px;
+    color: #8890b0;
+}
+
+.signInMsg {
+    float: left;
+    margin-left: 20px;
+    color: #8890b0;
+}
+
+.leftCard .regstrAccnt,
+.signInAnc {
+    color: rgba(39, 59, 122, 255);
+    font-weight: 550;
+    font-size: small;
+}
+
+.leftCard .regstrAccnt,
+.signInAnc a {
+    color: #667abd;
+}
+
+.leftCard .regstrAccnt,
+.signInAnc a:hover {
+    color: #3d5fcf;
+    font-weight: bolder;
+}
+
+.newUser {
+    font-weight: bolder;
+    font-size: larger;
+    color: #888be9;
+    margin-top: 60px;
+    margin-left: 25px;
+    float: left;
+}
+
+.leftCard .newUserMsg {
+    clear: left;
+    color: #8890b0;
+    font-size: 12px;
+    margin-top: 100px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.leftCard input[type="email"] {
+    background: #eae7e7 url(./icons8-email-48.png) no-repeat;
+    background-size: 30px;
+    background-position-x: -10px;
+    background-position: left top;
+    background-position-y: 8px;
+}
+
+.leftCard .userDate {
+    background: #eae7e7 url(./icons8-cake-48.png) no-repeat;
+    background-size: 30px;
+    background-position-x: -10px;
+    background-position: left top;
+    background-position-y: 8px;
+}
+
+.success {
+    font-weight: bold;
+    font-size: medium;
+    color: #888be9;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.invalidSignError,
+.emailExists {
+    visibility: hidden;
+    color: red;
+}
+
+.signFrgtPswd {
+    clear: left;
+    display: flex;
+    margin-left: 102px;
+
+}
+
+.signFrgtPswd .a {
+    color: #667abd;
+    text-decoration: none;
+}
+
+.signFrgtPswd :hover {
+    color: #3d5fcf;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.checkEmail {
+    visibility: hidden;
+    color: #8890b0;
+
+
+}
+
+.forgtSignIn a {
+    color: #ebebeb;
+    text-decoration: none;
+}
